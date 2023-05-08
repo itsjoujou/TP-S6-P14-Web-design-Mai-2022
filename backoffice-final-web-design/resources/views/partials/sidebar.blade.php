@@ -57,7 +57,7 @@
                       </g>
                 </svg>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">Gazette</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Backoffice</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -69,7 +69,7 @@
 
     <ul class="menu-inner py-1">
         <!-- BackOffice -->
-        <li class="menu-header small text-uppercase"><span class="menu-header-text">BackOffice</span></li>
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Backoffice</span></li>
         <!-- Gestion Contenu -->
         <li class="menu-item active open">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
