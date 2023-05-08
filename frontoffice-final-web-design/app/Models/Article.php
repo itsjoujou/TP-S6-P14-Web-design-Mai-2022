@@ -8,6 +8,7 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 /**
  * Class Article
@@ -56,5 +57,10 @@ class Article extends Model
 	public function user()
 	{
 		return $this->belongsTo(User::class, 'author');
+	}
+
+	public function slugify()
+	{
+		return Str::slug($this->article_id." ".$this->title, "-");
 	}
 }

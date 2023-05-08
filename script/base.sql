@@ -11,10 +11,10 @@ CREATE TABLE role_user (
 CREATE TABLE users (
     user_id         SMALLINT NOT NULL PRIMARY KEY,
     username        VARCHAR(100) NOT NULL,
-    email           VARCHAR(100) NOT NULL,
+    first_name      VARCHAR(100) NOT NULL,
+    last_name       VARCHAR(100) NOT NULL,
     "password"      VARCHAR(36) NOT NULL,
     "role"          SMALLINT NOT NULL REFERENCES role_user (role_id),
-    UNIQUE (email),
     UNIQUE (username, "password"),
     UNIQUE (username, "role")
 );

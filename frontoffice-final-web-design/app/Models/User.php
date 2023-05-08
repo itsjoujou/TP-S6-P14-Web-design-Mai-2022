@@ -14,7 +14,8 @@ use Illuminate\Database\Eloquent\Model;
  * 
  * @property int $user_id
  * @property string $username
- * @property string $email
+ * @property string $first_name
+ * @property string $last_name
  * @property string $password
  * @property int $role
  * 
@@ -41,7 +42,8 @@ class User extends Model
 
 	protected $fillable = [
 		'username',
-		'email',
+		'first_name',
+		'last_name',
 		'password',
 		'role'
 	];
